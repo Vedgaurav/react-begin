@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Table from './Table'
 import Form from './Form'
 import Api from './Api'
+import SignUp from './SignUp'
 
 class App extends Component{
 
@@ -34,6 +35,7 @@ class App extends Component{
                 <Table characterData={this.state.characters} removeCharacter={this.removeCharacter} />
                 <Form handleSubmit={this.handleSubmit} />
                 <Api />
+                <SignUp handleSubmit={this.handleSubmit} />
             </div>
 
         )
